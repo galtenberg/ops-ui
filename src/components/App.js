@@ -22,7 +22,8 @@ class App extends Component {
 
               return (
                 <div>
-                  <p>Query for resource:</p>
+                  <p><b>Query for resource:</b></p>
+                  <p><i>(Try rk043, VSI, 192.168, faisal, jz)</i></p>
                   <InputName
                     onSubmit={opsquerystr => {
                       refetch({

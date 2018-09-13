@@ -11,22 +11,29 @@ export default class InputName extends Component {
 
   render() {
     return (
-      <div>
+      <form onSubmit="this.props.onSubmit(this.state.opsquerystr)">
         <input
           type="text"
           value={this.state.opsquerystr}
+          autofocus
           onChange={e => {
             this.setState({ opsquerystr: e.target.value })
           }}
+          ref={(input) => { this.searchInput = input }}
         />
         <button
+          type="submit"
           onClick={() => {
             this.props.onSubmit(this.state.opsquerystr)
           }}
         >
-          Send
+          Search
         </button>
-      </div>
+      </form>
     )
+  }
+
+  componentDidMount(){
+    this.searchInput.focus()
   }
 }

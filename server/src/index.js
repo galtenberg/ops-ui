@@ -14,7 +14,7 @@ const typeDefs = `
 
 const resolvers = {
   Query: {
-    opsquery: (_, args) => `${ tableify(fuse.search(args.opsquerystr || 'PROD')) }`,
+    opsquery: (_, args) => `${ tableify(fuse.search(args.opsquerystr || 'PROD')) }`
   },
 }
 
@@ -22,7 +22,7 @@ const hw = transformKubectlHws(hwKubectl.items)
 const vm = transformKubectlVms(vmKubectl.items)
 
 // finding slot number in externalID: 0.2-0.4
-const options = {
+const searchOptions = {
   shouldSort: true,
   threshold: 0.2,
   location: 0,
@@ -32,11 +32,14 @@ const options = {
   keys: [
     "name",
     "addresses",
-    "environment"
+    "environment",
+    "os",
+    "pod",
+    "type"
   ]
 }
 
-const fuse = new Fuse(hw.concat(vm), options)
+const fuse = new Fuse([...hw, ...vm], searchOptions)
 
 const server = new GraphQLServer({ typeDefs, resolvers })
 server.start(() => console.log(`Server is running at http://localhost:4000`))
