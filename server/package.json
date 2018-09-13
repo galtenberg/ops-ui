@@ -5,8 +5,13 @@
     "start": "node src/index.js"
   },
   "keywords": [],
-  "author": "Manjula Dube",
   "dependencies": {
+    "fuse.js": "^3.2.1",
+    "json-to-table": "^4.1.0",
+    "tableify": "^1.1.0",
     "graphql-yoga": "1.16.2"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }

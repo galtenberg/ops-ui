@@ -1,0 +1,48 @@
+{
+  "name": "dashdb-txnha-small-yp-dal09-54-sby.services.dal.bluemix.net",
+  "type": "CCI",
+  "pod": "dal09.pod02",
+  "datacenter": "dal09",
+  "service": "dash",
+  "environment": "PROD",
+  "processor_cores": 2,
+  "memory": 8,
+  "storage_space": 602,
+  "os": "CentOS 6.0-64 Minimal for VSI",
+  "addresses": [
+    "10.142.241.171",
+    "169.55.231.27",
+    "169.55.45.48",
+    "172.17.42.1"
+  ],
+  "private_address": "10.142.241.171",
+  "vlans": [
+    {
+      "address": "169.55.231.27",
+      "id": 785945,
+      "name": "Env5 DAL09 Srv Pub2",
+      "vlanNumber": 801
+    },
+    {
+      "address": "10.142.241.171",
+      "id": 785947,
+      "name": "Env5 DAL09 Srv Pri2",
+      "vlanNumber": 810
+    }
+  ],
+  "created": "2017-02-23T08:54:49-08:00",
+  "iem_id": "8906980",
+  "eos": 1487808000,
+  "softlayer_account": "288698",
+  "softlayer_id": 28722623,
+  "plan": "txnha",
+  "requester": "jeevat@ca.ibm.com",
+  "bluemix_environment": "YP",
+  "tags": [
+    "cds:svcplan:txnha",
+    "cds:bmixenv:yp",
+    "cds:service:dash",
+    "cds:component:db2",
+    "cds:svcenv:prod"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+    "id": 1553255,
+    "name": "ciae-cambia-h-pub",
+    "vlanNumber": 840,
+    "hardwareCount": 4,
+    "virtualGuestCount": 13,
+    "dedicatedFirewallFlag": 0,
+    "networkSpace": "PUBLIC",
+    "totalPrimaryIpAddressCount": 42,
+    "primaryRouter": {
+      "hostname": "fcr01.sea01",
+      "datacenter": {
+        "name": "sea01"
+      }
+    },
+    "subnets": [
+      {
+        "cidr": 27,
+        "id": 114860,
+        "networkIdentifier": "208.43.160.128",
+        "subnetType": "ADDITIONAL_PRIMARY",
+        "totalIpAddresses": "32",
+        "usableIpAddressCount": "29",
+        "version": 4,
+        "podName": "sea01.pod01",
+        "ipAddresses": [
+          {
+            "ipAddress": "208.43.160.128",
+            "isBroadcast": false,
+            "isGateway": false,
+            "isNetwork": true,
+            "isReserved": false
+          },
+          {
+            "ipAddress": "208.43.160.147",
+            "isBroadcast": false,
+            "isGateway": false,
+            "isNetwork": false,
+            "isReserved": false,
+            "hardware": {
+              "fullyQualifiedDomainName": "iischp-l-cmpt2.sea01.us-south.services.bluemix.net",
+              "primaryBackendIpAddress": "10.21.134.209",
+              "primaryIpAddress": "208.43.160.147"
+            }
+          },
+          {
+            "ipAddress": "208.43.160.148",
+            "isBroadcast": false,
+            "isGateway": false,
+            "isNetwork": false,
+            "isReserved": false,
+            "virtualGuest": {
+              "fullyQualifiedDomainName": "db2hosted-Medium-JPNM-01-sng01.bluemix.net",
+              "primaryBackendIpAddress": "10.64.114.80",
+              "primaryIpAddress": "119.81.72.26"
+            }
+          },
+          {
+            "ipAddress": "67.228.122.83",
+            "isBroadcast": false,
+            "isGateway": false,
+            "isNetwork": false,
+            "isReserved": false,
+            "hardware": {
+              "fullyQualifiedDomainName": "iischp-l-cmpt3.sea01.us-south.services.bluemix.net",
+              "primaryBackendIpAddress": "10.21.134.198",
+              "primaryIpAddress": "67.228.122.83"
+            }
+          },
+          {
+            "ipAddress": "67.228.122.95",
+            "isBroadcast": true,
+            "isGateway": false,
+            "isNetwork": false,
+            "isReserved": false
+          }
+        ]
+      }
+    ]
+}

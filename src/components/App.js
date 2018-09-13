@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { gql } from 'apollo-boost'
 import { Query } from 'react-apollo'
-import logo from '../logo.svg'
 import '../styles/App.css'
 import InputName from './InputName'
 
@@ -10,10 +9,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <Query query={HELLO_QUERY}>
+          <Query query={OPS_QUERY}>
             {props => {
-              console.log(props)
               const { data, loading, error, refetch } = props
               if (loading) {
                 return <div>Loading</div>
@@ -25,15 +22,15 @@ class App extends Component {
 
               return (
                 <div>
-                  <p>What's your name?</p>
+                  <p>Query for resource:</p>
                   <InputName
-                    onSubmit={name => {
+                    onSubmit={opsquerystr => {
                       refetch({
-                        name,
+                        opsquerystr,
                       })
                     }}
                   />
-                  <h3>{data.hello}</h3>
+                  <div id="opsresults" dangerouslySetInnerHTML={ {__html: data.opsquery }}></div>
                 </div>
               )
             }}
@@ -44,9 +41,9 @@ class App extends Component {
   }
 }
 
-const HELLO_QUERY = gql`
-  query HelloQuery($name: String) {
-    hello(name: $name)
+const OPS_QUERY = gql`
+  query OpsQuery($opsquerystr: String) {
+    opsquery(opsquerystr: $opsquerystr)
   }
 `
 

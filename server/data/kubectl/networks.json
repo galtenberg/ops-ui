@@ -1,0 +1,2639 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "description": "cldbench",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s28",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{\"description\":\"cldbench\"},\"name\":\"cldbenchGW\",\"namespace\":\"11bf145efcc3081d1706ffa5734f0672\"},\"spec\":{\"bandwidthMb\":1000,\"enableL2Broadcast\":true,\"subnet\":\"169.47.85.184/29\"}}\n"
+                },
+                "creationTimestamp": "2018-08-12T14:06:45Z",
+                "labels": {
+                    "UserCreated": "true"
+                },
+                "name": "cldbenchGW",
+                "namespace": "11bf145efcc3081d1706ffa5734f0672",
+                "resourceVersion": "80425",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/11bf145efcc3081d1706ffa5734f0672/networks/cldbenchGW",
+                "uid": "f20a7018-9e38-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "subnet": "169.47.85.184/29"
+            },
+            "status": {
+                "gatewayIP": "169.47.85.185",
+                "gatewayMAC": "00:00:01:00:25:2E",
+                "mtu": 1500,
+                "routerInterfaceID": "f20c2b41-9e38-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9518
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "description": "cww",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s28",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{\"description\":\"cww\"},\"name\":\"cwwGW\",\"namespace\":\"279740febb2245759db9e8d4a56b4c85\"},\"spec\":{\"bandwidthMb\":1000,\"enableL2Broadcast\":true,\"subnet\":\"169.47.85.160/28\"}}\n"
+                },
+                "creationTimestamp": "2018-08-12T13:58:20Z",
+                "labels": {
+                    "UserCreated": "true"
+                },
+                "name": "cwwGW",
+                "namespace": "279740febb2245759db9e8d4a56b4c85",
+                "resourceVersion": "79279",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/279740febb2245759db9e8d4a56b4c85/networks/cwwGW",
+                "uid": "c5536727-9e37-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "subnet": "169.47.85.160/28"
+            },
+            "status": {
+                "gatewayIP": "169.47.85.161",
+                "gatewayMAC": "00:00:01:00:25:2B",
+                "mtu": 1500,
+                "routerInterfaceID": "c555507c-9e37-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9515
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s19",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{},\"name\":\"faisal1-network\",\"namespace\":\"2c4a1985f9d5c10bd4842d2d3989088e\"},\"spec\":{\"bandwidthMb\":100,\"enableARP\":true,\"subnet\":\"11.11.11.0/24\"}}\n"
+                },
+                "creationTimestamp": "2018-08-31T02:27:19Z",
+                "name": "faisal1-network",
+                "namespace": "2c4a1985f9d5c10bd4842d2d3989088e",
+                "resourceVersion": "1252723",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/2c4a1985f9d5c10bd4842d2d3989088e/networks/faisal1-network",
+                "uid": "6263f623-acc5-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "enableARP": true,
+                "leaseDuration": "300",
+                "subnet": "11.11.11.0/24"
+            },
+            "status": {
+                "gatewayIP": "11.11.11.1",
+                "gatewayMAC": "00:00:01:00:33:55",
+                "mtu": 1500,
+                "routerInterfaceID": "626638a5-acc5-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 13141
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s18",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{},\"name\":\"faisal_test2-network\",\"namespace\":\"2c4a1985f9d5c10bd4842d2d3989088e\"},\"spec\":{\"bandwidthMb\":100,\"enableARP\":true,\"subnet\":\"11.11.11.0/24\"}}\n"
+                },
+                "creationTimestamp": "2018-08-31T04:06:46Z",
+                "name": "faisal_test2-network",
+                "namespace": "2c4a1985f9d5c10bd4842d2d3989088e",
+                "resourceVersion": "1256830",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/2c4a1985f9d5c10bd4842d2d3989088e/networks/faisal_test2-network",
+                "uid": "46c4f7e1-acd3-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "enableARP": true,
+                "leaseDuration": "300",
+                "subnet": "11.11.11.0/24"
+            },
+            "status": {
+                "gatewayIP": "11.11.11.1",
+                "gatewayMAC": "00:00:01:00:34:0C",
+                "mtu": 1500,
+                "routerInterfaceID": "46c6bf70-acd3-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 13324
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "description": "perf3",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s28",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{\"description\":\"perf3\"},\"name\":\"perf3GW\",\"namespace\":\"2f48e25da8e660ae930ba9a873851d91\"},\"spec\":{\"bandwidthMb\":1000,\"enableL2Broadcast\":true,\"subnet\":\"169.47.85.176/29\"}}\n"
+                },
+                "creationTimestamp": "2018-08-12T14:00:05Z",
+                "labels": {
+                    "UserCreated": "true"
+                },
+                "name": "perf3GW",
+                "namespace": "2f48e25da8e660ae930ba9a873851d91",
+                "resourceVersion": "79786",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/2f48e25da8e660ae930ba9a873851d91/networks/perf3GW",
+                "uid": "03972a4e-9e38-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "subnet": "169.47.85.176/29"
+            },
+            "status": {
+                "gatewayIP": "169.47.85.177",
+                "gatewayMAC": "00:00:01:00:25:2C",
+                "mtu": 1500,
+                "routerInterfaceID": "03996ecf-9e38-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9516
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "test network",
+                    "RequestID": "ggurung-CreateNetwork-2018.08.30.10.32.22"
+                },
+                "creationTimestamp": "2018-08-30T15:32:22Z",
+                "labels": {
+                    "ResourceGroup": "test",
+                    "ResourceName": "test1",
+                    "UserCreated": "true"
+                },
+                "name": "038f7d23-feac-4cdc-9071-355a656b720e",
+                "namespace": "30d70bff6112277b35eb20371f356919",
+                "resourceVersion": "1231954",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/30d70bff6112277b35eb20371f356919/networks/038f7d23-feac-4cdc-9071-355a656b720e",
+                "uid": "e3d7ab55-ac69-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "leaseDuration": "300",
+                "subnet": "172.16.0.0/24"
+            },
+            "status": {
+                "gatewayIP": "172.16.0.1",
+                "gatewayMAC": "00:00:01:00:30:C9",
+                "mtu": 1500,
+                "routerInterfaceID": "e3d8fb4d-ac69-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12489
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "10-subnet",
+                    "RequestID": "ggurung-CreateNetwork-2018.08.16.08.46.24"
+                },
+                "creationTimestamp": "2018-08-16T13:46:25Z",
+                "labels": {
+                    "ResourceGroup": "PSO",
+                    "ResourceName": "pso-10-subnet",
+                    "UserCreated": "true"
+                },
+                "name": "484b1217-e8d7-4aea-ac25-32c0a4372e6e",
+                "namespace": "30d70bff6112277b35eb20371f356919",
+                "resourceVersion": "867931",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/30d70bff6112277b35eb20371f356919/networks/484b1217-e8d7-4aea-ac25-32c0a4372e6e",
+                "uid": "c49c731f-a15a-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "leaseDuration": "300",
+                "subnet": "10.8.0.0/14"
+            },
+            "status": {
+                "gatewayIP": "10.8.0.1",
+                "gatewayMAC": "00:00:01:00:29:F9",
+                "mtu": 1500,
+                "routerInterfaceID": "c49dbcb0-a15a-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 10745
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "pso-3",
+                    "RequestID": "ggurung-CreateNetwork-2018.08.12.12.06.24"
+                },
+                "creationTimestamp": "2018-08-12T17:06:24Z",
+                "labels": {
+                    "ResourceGroup": "PSO",
+                    "ResourceName": "pso-3",
+                    "UserCreated": "true"
+                },
+                "name": "631ed28f-d652-4b0c-b3f6-b13799ca4234",
+                "namespace": "30d70bff6112277b35eb20371f356919",
+                "resourceVersion": "1234003",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/30d70bff6112277b35eb20371f356919/networks/631ed28f-d652-4b0c-b3f6-b13799ca4234",
+                "uid": "0b338302-9e52-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "leaseDuration": "300",
+                "subnet": "192.168.200.0/24"
+            },
+            "status": {
+                "gatewayIP": "192.168.200.1",
+                "gatewayMAC": "00:00:01:00:25:34",
+                "mtu": 1500,
+                "routerInterfaceID": "0b34c36a-9e52-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9524
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "description": "PSO",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s07,genctl-nl-fz2-qz2-sr1-rk022-s17,genctl-nl-fz2-qz2-sr1-rk044-s28,genctl-nl-fz2-qz2-sr1-rk043-s08",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{\"description\":\"PSO\"},\"name\":\"psoGW\",\"namespace\":\"30d70bff6112277b35eb20371f356919\"},\"spec\":{\"bandwidthMb\":1000,\"enableL2Broadcast\":true,\"subnet\":\"169.47.85.200/29\"}}\n"
+                },
+                "creationTimestamp": "2018-08-12T12:38:44Z",
+                "labels": {
+                    "UserCreated": "true"
+                },
+                "name": "psoGW",
+                "namespace": "30d70bff6112277b35eb20371f356919",
+                "resourceVersion": "1232370",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/30d70bff6112277b35eb20371f356919/networks/psoGW",
+                "uid": "a6bb2333-9e2c-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "subnet": "169.47.85.200/29"
+            },
+            "status": {
+                "gatewayIP": "169.47.85.201",
+                "gatewayMAC": "00:00:01:00:25:26",
+                "mtu": 1500,
+                "routerInterfaceID": "a6bc6967-9e2c-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9510
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk043-s18,genctl-nl-fz2-qz2-sr1-rk021-s10"
+                },
+                "creationTimestamp": "2018-08-30T16:07:55Z",
+                "name": "storagedevice-storagevolume-dsnstoragevolume-7128ad46-344d-41b4-b6c6-8496ef98fbac",
+                "namespace": "30d70bff6112277b35eb20371f356919",
+                "resourceVersion": "1233914",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/30d70bff6112277b35eb20371f356919/networks/storagedevice-storagevolume-dsnstoragevolume-7128ad46-344d-41b4-b6c6-8496ef98fbac",
+                "uid": "daefefa5-ac6e-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "disableDHCP": true,
+                "leaseDuration": "300"
+            },
+            "status": {
+                "mtu": 1500,
+                "state": "Ready",
+                "vnid": 12558
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s17,genctl-nl-fz2-qz2-sr1-rk021-s10"
+                },
+                "creationTimestamp": "2018-08-30T16:13:43Z",
+                "name": "storagedevice-storagevolume-dsnstoragevolume-982d8a3e-00b0-474e-b31c-0aa6f133a09f",
+                "namespace": "30d70bff6112277b35eb20371f356919",
+                "resourceVersion": "1233968",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/30d70bff6112277b35eb20371f356919/networks/storagedevice-storagevolume-dsnstoragevolume-982d8a3e-00b0-474e-b31c-0aa6f133a09f",
+                "uid": "aa723613-ac6f-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "disableDHCP": true,
+                "leaseDuration": "300"
+            },
+            "status": {
+                "mtu": 1500,
+                "state": "Ready",
+                "vnid": 12560
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s10,genctl-nl-fz2-qz2-sr1-rk044-s17"
+                },
+                "creationTimestamp": "2018-08-30T16:13:43Z",
+                "name": "storagedevice-storagevolume-dsnstoragevolume-c29e84a8-b11c-4e14-b0a6-5cab11098865",
+                "namespace": "30d70bff6112277b35eb20371f356919",
+                "resourceVersion": "1233970",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/30d70bff6112277b35eb20371f356919/networks/storagedevice-storagevolume-dsnstoragevolume-c29e84a8-b11c-4e14-b0a6-5cab11098865",
+                "uid": "aa70dfbd-ac6f-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "disableDHCP": true,
+                "leaseDuration": "300"
+            },
+            "status": {
+                "mtu": 1500,
+                "state": "Ready",
+                "vnid": 12559
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk043-s18,genctl-nl-fz2-qz2-sr1-rk043-s10"
+                },
+                "creationTimestamp": "2018-08-30T16:07:55Z",
+                "name": "storagedevice-storagevolume-dsnstoragevolume-d2ab821f-180a-4ab4-b50e-35d7dc378a7f",
+                "namespace": "30d70bff6112277b35eb20371f356919",
+                "resourceVersion": "1233915",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/30d70bff6112277b35eb20371f356919/networks/storagedevice-storagevolume-dsnstoragevolume-d2ab821f-180a-4ab4-b50e-35d7dc378a7f",
+                "uid": "daeea0a9-ac6e-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "disableDHCP": true,
+                "leaseDuration": "300"
+            },
+            "status": {
+                "mtu": 1500,
+                "state": "Ready",
+                "vnid": 12557
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "nel test network",
+                    "RequestID": "Melvin.Davies2@ibm.com-CreateNetwork-2018.08.14.08.17.17"
+                },
+                "creationTimestamp": "2018-08-14T13:17:18Z",
+                "labels": {
+                    "ResourceGroup": "mygroup",
+                    "ResourceName": "MelNetWork",
+                    "UserCreated": "true"
+                },
+                "name": "b6f09fe2-075c-42c7-9121-c0ea5a287ae9",
+                "namespace": "53126af583f0487693bdd73b46fa6ee4",
+                "resourceVersion": "333565",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/53126af583f0487693bdd73b46fa6ee4/networks/b6f09fe2-075c-42c7-9121-c0ea5a287ae9",
+                "uid": "5e68e97f-9fc4-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "leaseDuration": "300",
+                "subnet": "10.10.101.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.101.1",
+                "gatewayMAC": "00:00:01:00:2F:C7",
+                "mtu": 1500,
+                "routerInterfaceID": "5e6ad3b2-9fc4-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12231
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "vlan100",
+                    "RequestID": "2c6a9076ad8c05482504cab005aa48ab",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s06,genctl-nl-fz2-qz2-sr1-rk022-s18"
+                },
+                "creationTimestamp": "2018-08-17T16:05:21Z",
+                "labels": {
+                    "ResourceGroup": "rg1",
+                    "ResourceName": "vlan102",
+                    "UserCreated": "true"
+                },
+                "name": "2c8b2979-3e55-4ab2-aaed-0272921d5596",
+                "namespace": "76300d27a3113d150a99eec782a690e0",
+                "resourceVersion": "626978",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/76300d27a3113d150a99eec782a690e0/networks/2c8b2979-3e55-4ab2-aaed-0272921d5596",
+                "uid": "57ecf3e4-a237-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "enableARP": true,
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "reservedIPs": [
+                    "192.168.102.10",
+                    "192.168.102.11",
+                    "192.168.102.12"
+                ],
+                "subnet": "192.168.102.0/24"
+            },
+            "status": {
+                "gatewayIP": "192.168.102.1",
+                "gatewayMAC": "00:00:01:00:2F:A8",
+                "mtu": 1500,
+                "routerInterfaceID": "57ee4da8-a237-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12200
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "vlan104",
+                    "RequestID": "c528b061f7c0f292dd11b5582628872e",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s17,genctl-nl-fz2-qz2-sr1-rk044-s06"
+                },
+                "creationTimestamp": "2018-08-18T01:41:54Z",
+                "labels": {
+                    "ResourceGroup": "rg1",
+                    "ResourceName": "vlan104",
+                    "UserCreated": "true"
+                },
+                "name": "45f40e2d-c374-4e91-9f59-b3816030c03a",
+                "namespace": "76300d27a3113d150a99eec782a690e0",
+                "resourceVersion": "813382",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/76300d27a3113d150a99eec782a690e0/networks/45f40e2d-c374-4e91-9f59-b3816030c03a",
+                "uid": "e2c25a0d-a287-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "enableARP": true,
+                "leaseDuration": "300",
+                "reservedIPs": [
+                    "192.168.104.10",
+                    "192.168.104.11",
+                    "192.168.104.12"
+                ],
+                "subnet": "192.168.104.0/24"
+            },
+            "status": {
+                "gatewayIP": "192.168.104.1",
+                "gatewayMAC": "00:00:01:00:32:00",
+                "mtu": 1500,
+                "routerInterfaceID": "e2c43706-a287-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12800
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "vlan100",
+                    "RequestID": "4a52693098a9325f90baa6c708f5029e"
+                },
+                "creationTimestamp": "2018-08-14T22:00:40Z",
+                "labels": {
+                    "ResourceGroup": "rg1",
+                    "ResourceName": "vlan100",
+                    "UserCreated": "true"
+                },
+                "name": "694a9f91-8ce4-4c37-9041-5389fc167f89",
+                "namespace": "76300d27a3113d150a99eec782a690e0",
+                "resourceVersion": "630267",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/76300d27a3113d150a99eec782a690e0/networks/694a9f91-8ce4-4c37-9041-5389fc167f89",
+                "uid": "7bdf2b89-a00d-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "bandwidthMb": 10000,
+                "defaultEgressAction": 2,
+                "defaultIngressAction": 2,
+                "enableL2Broadcast": true,
+                "enableSecurityGroup": true,
+                "leaseDuration": "300",
+                "reservedIPs": [
+                    "192.168.101.10",
+                    "192.168.101.11",
+                    "192.168.101.12"
+                ],
+                "subnet": "192.168.101.0/24"
+            },
+            "status": {
+                "gatewayIP": "192.168.101.1",
+                "gatewayMAC": "00:00:01:00:32:28",
+                "mtu": 1500,
+                "routerInterfaceID": "7be111a9-a00d-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12840
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "vlan100",
+                    "RequestID": "bfeb6212fab2853e4d0f12ea611d4319",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk021-s03,genctl-nl-fz2-qz2-sr1-rk044-s09,genctl-nl-fz2-qz2-sr1-rk044-s19,genctl-nl-fz2-qz2-sr1-rk021-s05,genctl-nl-fz2-qz2-sr1-rk043-s08,genctl-nl-fz2-qz2-sr1-rk044-s08,genctl-nl-fz2-qz2-sr1-rk022-s07,genctl-nl-fz2-qz2-sr1-rk022-s18,genctl-nl-fz2-qz2-sr1-rk022-s17"
+                },
+                "creationTimestamp": "2018-08-12T15:54:43Z",
+                "labels": {
+                    "ResourceGroup": "rg1",
+                    "ResourceName": "vlan100",
+                    "UserCreated": "true"
+                },
+                "name": "845556b4-85e5-43eb-817a-b5a1a6533cb6",
+                "namespace": "76300d27a3113d150a99eec782a690e0",
+                "resourceVersion": "1144169",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/76300d27a3113d150a99eec782a690e0/networks/845556b4-85e5-43eb-817a-b5a1a6533cb6",
+                "uid": "076ee863-9e48-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 20000,
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "reservedIPs": [
+                    "192.168.100.10",
+                    "192.168.100.11",
+                    "192.168.100.12"
+                ],
+                "subnet": "192.168.100.0/24"
+            },
+            "status": {
+                "gatewayIP": "192.168.100.1",
+                "gatewayMAC": "00:00:01:00:25:30",
+                "mtu": 1500,
+                "routerInterfaceID": "07704e2a-9e48-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9520
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "description": "ce",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s18,genctl-nl-fz2-qz2-sr1-rk044-s19,genctl-nl-fz2-qz2-sr1-rk044-s28,genctl-nl-fz2-qz2-sr1-rk044-s06,genctl-nl-fz2-qz2-sr1-rk021-s03,genctl-nl-fz2-qz2-sr1-rk022-s17",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{\"description\":\"ce\"},\"name\":\"ceGW\",\"namespace\":\"76300d27a3113d150a99eec782a690e0\"},\"spec\":{\"bandwidthMb\":1000,\"enableL2Broadcast\":true,\"subnet\":\"169.47.85.128/27\"}}\n"
+                },
+                "creationTimestamp": "2018-08-12T13:56:09Z",
+                "labels": {
+                    "UserCreated": "true"
+                },
+                "name": "ceGW",
+                "namespace": "76300d27a3113d150a99eec782a690e0",
+                "resourceVersion": "651154",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/76300d27a3113d150a99eec782a690e0/networks/ceGW",
+                "uid": "772e2e85-9e37-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "subnet": "169.47.85.128/27"
+            },
+            "status": {
+                "gatewayIP": "169.47.85.129",
+                "gatewayMAC": "00:00:01:00:25:2A",
+                "mtu": 1500,
+                "routerInterfaceID": "772f92ed-9e37-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9514
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s18,genctl-nl-fz2-qz2-sr1-rk021-s03",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"Spec\":{\"bandwidthMb\":100,\"enableL2Broadcast\":true,\"reservedIPs\":[\"192.168.177.10\",\"192.168.177.100\",\"192.168.177.200\"],\"subnet\":\"192.168.177.0/24\"},\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{},\"labels\":{\"ResourceGroup\":\"rg1\",\"ResourceName\":\"vlanjz\",\"UserCreated\":\"true\"},\"name\":\"vlanjz\",\"namespace\":\"76300d27a3113d150a99eec782a690e0\"}}\n"
+                },
+                "creationTimestamp": "2018-08-30T16:41:40Z",
+                "labels": {
+                    "ResourceGroup": "rg1",
+                    "ResourceName": "vlanjz",
+                    "UserCreated": "true"
+                },
+                "name": "vlanjz",
+                "namespace": "76300d27a3113d150a99eec782a690e0",
+                "resourceVersion": "1236012",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/76300d27a3113d150a99eec782a690e0/networks/vlanjz",
+                "uid": "91fee6b6-ac73-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "reservedIPs": [
+                    "192.168.177.10",
+                    "192.168.177.100",
+                    "192.168.177.200"
+                ],
+                "subnet": "192.168.177.0/24"
+            },
+            "status": {
+                "gatewayIP": "192.168.177.1",
+                "gatewayMAC": "00:00:01:00:30:FE",
+                "mtu": 1500,
+                "routerInterfaceID": "9200ad29-ac73-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12542
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "Net1",
+                    "RequestID": "sri.kattamuri@ibm.com-CreateNetwork-2018.08.30.15.39.45"
+                },
+                "creationTimestamp": "2018-08-30T20:39:45Z",
+                "labels": {
+                    "ResourceGroup": "sri_grp",
+                    "ResourceName": "N1",
+                    "UserCreated": "true"
+                },
+                "name": "0321a7bd-94c9-412f-996e-6c64c92c4675",
+                "namespace": "824190ff4b254eb2b38867d7613b05cd",
+                "resourceVersion": "1276104",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/824190ff4b254eb2b38867d7613b05cd/networks/0321a7bd-94c9-412f-996e-6c64c92c4675",
+                "uid": "d4a1f01f-ac94-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "leaseDuration": "300",
+                "subnet": "192.168.0.0/24"
+            },
+            "status": {
+                "gatewayIP": "192.168.0.1",
+                "gatewayMAC": "00:00:01:00:31:EB",
+                "mtu": 1500,
+                "routerInterfaceID": "d4a38cb4-ac94-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12779
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "description": "sri_net",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s28",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{\"description\":\"sri_net\"},\"name\":\"sriGW\",\"namespace\":\"824190ff4b254eb2b38867d7613b05cd\"},\"spec\":{\"bandwidthMb\":1000,\"enableL2Broadcast\":true,\"subnet\":\"169.47.85.216/30\"}}\n"
+                },
+                "creationTimestamp": "2018-08-31T12:36:23Z",
+                "labels": {
+                    "UserCreated": "true"
+                },
+                "name": "sriGW",
+                "namespace": "824190ff4b254eb2b38867d7613b05cd",
+                "resourceVersion": "1276154",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/824190ff4b254eb2b38867d7613b05cd/networks/sriGW",
+                "uid": "784bf1c6-ad1a-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "subnet": "169.47.85.216/30"
+            },
+            "status": {
+                "gatewayIP": "169.47.85.217",
+                "gatewayMAC": "00:00:01:00:35:F1",
+                "mtu": 1500,
+                "routerInterfaceID": "784dbcd9-ad1a-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 13809
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "21d6f6f6093dba52e71a39744fc823c3",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s18"
+                },
+                "creationTimestamp": "2018-08-15T02:53:39Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "0e79c341-4583-4c9b-8f95-86678eba72fb",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "397801",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/0e79c341-4583-4c9b-8f95-86678eba72fb",
+                "uid": "69716d33-a036-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:33:74",
+                "mtu": 1500,
+                "routerInterfaceID": "697264ec-a036-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 13172
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "39ad509ca7c8aded4743fa9ec081604d"
+                },
+                "creationTimestamp": "2018-08-10T22:24:21Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "1ab9fb66-1d81-4263-a5b1-4d9d3ef09c9c",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "4926",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/1ab9fb66-1d81-4263-a5b1-4d9d3ef09c9c",
+                "uid": "20ce638f-9cec-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:24:91",
+                "mtu": 1500,
+                "routerInterfaceID": "20cf3e90-9cec-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9361
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "10992f27bdbb18d11d618207e0a902f4",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s18"
+                },
+                "creationTimestamp": "2018-08-26T13:53:32Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "29061874-68cc-4df5-81ef-b1c128cacd1d",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "1046931",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/29061874-68cc-4df5-81ef-b1c128cacd1d",
+                "uid": "6b2d9a52-a937-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:2C:C5",
+                "mtu": 1500,
+                "routerInterfaceID": "6b2ec899-a937-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 11461
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "c778ea65d9a7861753bdd8f4ad8623f4"
+                },
+                "creationTimestamp": "2018-08-27T13:45:13Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "2c957374-51f2-4d0f-a8b6-4ea3b40973f2",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "1087195",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/2c957374-51f2-4d0f-a8b6-4ea3b40973f2",
+                "uid": "6c50873e-a9ff-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:31:6A",
+                "mtu": 1500,
+                "routerInterfaceID": "6c526503-a9ff-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12650
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "8ac6e2c73f02074ee5589969be8243fa",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk021-s03"
+                },
+                "creationTimestamp": "2018-08-27T05:54:27Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "2f213f24-6a17-410b-97e0-7ef216c8f953",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "1075176",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/2f213f24-6a17-410b-97e0-7ef216c8f953",
+                "uid": "a8429cda-a9bd-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:2F:E3",
+                "mtu": 1500,
+                "routerInterfaceID": "a843d16a-a9bd-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12259
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "A network that works",
+                    "RequestID": "8288d414a69802699f7331bc8c5111ce",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk021-s03"
+                },
+                "creationTimestamp": "2018-08-12T18:50:01Z",
+                "labels": {
+                    "ResourceGroup": "rg1",
+                    "ResourceName": "private_network1",
+                    "UserCreated": "true"
+                },
+                "name": "2f35f852-a337-4571-8cb8-6b64ac0d2f23",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "623053",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/2f35f852-a337-4571-8cb8-6b64ac0d2f23",
+                "uid": "84a324a4-9e60-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "enableARP": true,
+                "leaseDuration": "300",
+                "subnet": "192.168.100.0/22"
+            },
+            "status": {
+                "gatewayIP": "192.168.100.1",
+                "gatewayMAC": "00:00:01:00:25:B6",
+                "mtu": 1500,
+                "routerInterfaceID": "84a48707-9e60-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9654
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "8884729e8760d7489feab69dd17a7fc1"
+                },
+                "creationTimestamp": "2018-08-10T16:24:14Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "2f42e0f0-9c32-4c13-a5f9-57412e76a417",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "642",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/2f42e0f0-9c32-4c13-a5f9-57412e76a417",
+                "uid": "d24db3fb-9cb9-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:23:C8",
+                "mtu": 1500,
+                "routerInterfaceID": "d24e7d93-9cb9-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9160
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "6dd54874b26be627c170b982ea6972e1",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk021-s20"
+                },
+                "creationTimestamp": "2018-08-16T13:59:08Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "32548523-a1a8-42d8-8475-eca0b0266e49",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "533245",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/32548523-a1a8-42d8-8475-eca0b0266e49",
+                "uid": "8bb3abb0-a15c-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:2A:3A",
+                "mtu": 1500,
+                "routerInterfaceID": "8bb4d070-a15c-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 10810
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "060ef7cf1c1c6a76c3b26b5f7802d7ad"
+                },
+                "creationTimestamp": "2018-08-12T17:16:21Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "405c9a79-578d-43c2-bf3c-701d8a65a8db",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "92200",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/405c9a79-578d-43c2-bf3c-701d8a65a8db",
+                "uid": "6ea851c4-9e53-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:25:6F",
+                "mtu": 1500,
+                "routerInterfaceID": "6eaa24a4-9e53-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9583
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "0b06c7ef54a9555e49b4c1d633fe6a2d",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk021-s05"
+                },
+                "creationTimestamp": "2018-08-24T06:54:28Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "46a48be9-2b54-4291-aa4d-d8e9751dfc22",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "943155",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/46a48be9-2b54-4291-aa4d-d8e9751dfc22",
+                "uid": "8b4f41cd-a76a-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:31:47",
+                "mtu": 1500,
+                "routerInterfaceID": "8b5043a1-a76a-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12615
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "d75421193bba6e210f3a544d2f85012f"
+                },
+                "creationTimestamp": "2018-08-10T23:13:11Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "46cde778-f35a-4149-948b-b77173d30087",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "6070",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/46cde778-f35a-4149-948b-b77173d30087",
+                "uid": "f392c655-9cf2-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:25:0C",
+                "mtu": 1500,
+                "routerInterfaceID": "f393f3a9-9cf2-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9484
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "801c367c30cf03d3174970aa8e77184b",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s18"
+                },
+                "creationTimestamp": "2018-08-30T15:55:00Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "49a6c654-fd3c-4238-8dfe-ec89e336dbce",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "1232904",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/49a6c654-fd3c-4238-8dfe-ec89e336dbce",
+                "uid": "0cbe752a-ac6d-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:31:09",
+                "mtu": 1500,
+                "routerInterfaceID": "0cbf73cd-ac6d-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12553
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "57c72ef35af340184fcbf0a5acc896d2",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk043-s08"
+                },
+                "creationTimestamp": "2018-08-15T13:53:42Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "4e9a1722-df88-42d8-9522-24a915821b10",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "431689",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/4e9a1722-df88-42d8-9522-24a915821b10",
+                "uid": "9f0990f3-a092-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:36:55",
+                "mtu": 1500,
+                "routerInterfaceID": "9f0b049e-a092-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 13909
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "9ce24ea0ae65b906e8f717f01d033b48"
+                },
+                "creationTimestamp": "2018-08-10T22:51:37Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "50766daa-5818-418d-b7a9-a73a525eee63",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "5506",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/50766daa-5818-418d-b7a9-a73a525eee63",
+                "uid": "efdf124e-9cef-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:24:D0",
+                "mtu": 1500,
+                "routerInterfaceID": "efdfff04-9cef-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9424
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "5104c5582d2cf47b3cdd2ae51b44e467"
+                },
+                "creationTimestamp": "2018-08-27T13:45:21Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "5c58265f-8cce-4875-9cc6-c1f28f16b76b",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "1087210",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/5c58265f-8cce-4875-9cc6-c1f28f16b76b",
+                "uid": "71552ade-a9ff-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:31:7D",
+                "mtu": 1500,
+                "routerInterfaceID": "7155da5c-a9ff-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12669
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "Network Description",
+                    "RequestID": "42d1af5b63df6f038ce7d499fa965f81"
+                },
+                "creationTimestamp": "2018-08-13T11:40:26Z",
+                "labels": {
+                    "ResourceGroup": "NETRG",
+                    "ResourceName": "same_subnet_net2",
+                    "UserCreated": "true"
+                },
+                "name": "5cd9d999-af3b-4480-8546-0b0962677437",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "185830",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/5cd9d999-af3b-4480-8546-0b0962677437",
+                "uid": "abe3a33d-9eed-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "leaseDuration": "300",
+                "subnet": "172.16.17.0/24"
+            },
+            "status": {
+                "gatewayIP": "172.16.17.1",
+                "gatewayMAC": "00:00:01:00:2A:44",
+                "mtu": 1500,
+                "routerInterfaceID": "abe47783-9eed-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 10820
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "53e387a90599041c1e63718bd19dcc1c",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk021-s05"
+                },
+                "creationTimestamp": "2018-08-31T00:53:58Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "63c2cd45-d004-426c-8277-5bda75cc19cb",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "1249966",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/63c2cd45-d004-426c-8277-5bda75cc19cb",
+                "uid": "5824b512-acb8-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:33:20",
+                "mtu": 1500,
+                "routerInterfaceID": "5825e0c1-acb8-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 13088
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "af6b3bbb1bc3d54dd446eafc090cab8f",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s18"
+                },
+                "creationTimestamp": "2018-08-29T18:54:03Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "68def700-0b82-4c3d-a9fd-550e02c325dd",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "1195521",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/68def700-0b82-4c3d-a9fd-550e02c325dd",
+                "uid": "e60584c8-abbc-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:2C:E2",
+                "mtu": 1500,
+                "routerInterfaceID": "e606891b-abbc-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 11490
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "e083e53d581ab36f4d282bbaa2ac2aa6",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk043-s08"
+                },
+                "creationTimestamp": "2018-08-15T20:53:42Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "6e58b08c-66df-4add-946c-77b218f6d4d2",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "453736",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/6e58b08c-66df-4add-946c-77b218f6d4d2",
+                "uid": "4b50e3ff-a0cd-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:25:C5",
+                "mtu": 1500,
+                "routerInterfaceID": "4b51f422-a0cd-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9669
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "82cdab980fcb201b3f56799e95e03e8e",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s07"
+                },
+                "creationTimestamp": "2018-08-25T00:53:37Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "6f37f380-f7f2-4c1a-9145-9c2a28b57558",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "981752",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/6f37f380-f7f2-4c1a-9145-9c2a28b57558",
+                "uid": "4cfad00f-a801-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:35:E8",
+                "mtu": 1500,
+                "routerInterfaceID": "4cfbdf9e-a801-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 13800
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "606d6cbe05ad064626a7954ae37648e8",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk021-s05"
+                },
+                "creationTimestamp": "2018-08-25T05:53:48Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "6fbfffe0-10a3-4361-ae79-a41f5942468f",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "990539",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/6fbfffe0-10a3-4361-ae79-a41f5942468f",
+                "uid": "3c8f8a6d-a82b-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:37:38",
+                "mtu": 1500,
+                "routerInterfaceID": "3c90df34-a82b-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 14136
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "c6771f7f9464225664e9144554882b8f"
+                },
+                "creationTimestamp": "2018-08-27T13:45:20Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "720bea7a-e986-46ab-892a-3839042eb08a",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "1087205",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/720bea7a-e986-46ab-892a-3839042eb08a",
+                "uid": "70657d41-a9ff-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:31:78",
+                "mtu": 1500,
+                "routerInterfaceID": "706631dc-a9ff-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12664
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "d1007bab2a10c295dc29a8a1ad5841d9"
+                },
+                "creationTimestamp": "2018-08-27T13:45:18Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "7b82036a-dcbf-47fc-82db-384e1cd34145",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "1087200",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/7b82036a-dcbf-47fc-82db-384e1cd34145",
+                "uid": "6f791273-a9ff-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:31:73",
+                "mtu": 1500,
+                "routerInterfaceID": "6f79dbdc-a9ff-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12659
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "e639e0111091d9ebc4138d13e27fd125"
+                },
+                "creationTimestamp": "2018-08-10T16:24:16Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "85c25ec6-6eac-4c66-927e-92d7dff0db93",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "647",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/85c25ec6-6eac-4c66-927e-92d7dff0db93",
+                "uid": "d3336940-9cb9-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:23:C9",
+                "mtu": 1500,
+                "routerInterfaceID": "d3342e88-9cb9-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9161
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "18a6f90689bd87b4a60909d401f6942f"
+                },
+                "creationTimestamp": "2018-08-10T22:24:22Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "8b6208f9-12ca-4d2a-b027-2f28d32740a8",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "4931",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/8b6208f9-12ca-4d2a-b027-2f28d32740a8",
+                "uid": "21b5b5ec-9cec-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:24:92",
+                "mtu": 1500,
+                "routerInterfaceID": "21b69c53-9cec-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9362
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "ed25270e6296df7309291ec3b3d23a30",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk043-s08"
+                },
+                "creationTimestamp": "2018-08-15T04:53:37Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "8bf8f9c9-310d-46e8-b7d2-8ce54b8eed5b",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "403568",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/8bf8f9c9-310d-46e8-b7d2-8ce54b8eed5b",
+                "uid": "2c12dfab-a047-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:33:FA",
+                "mtu": 1500,
+                "routerInterfaceID": "2c13d959-a047-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 13306
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "38262d1371be26826e8ffd2ea82e3ea3",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk021-s03"
+                },
+                "creationTimestamp": "2018-08-31T14:56:02Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "a440addb-0cde-4c65-a3c3-39eac7613b96",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "1282040",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/a440addb-0cde-4c65-a3c3-39eac7613b96",
+                "uid": "fa7ca6d8-ad2d-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:36:BD",
+                "mtu": 1500,
+                "routerInterfaceID": "fa7dbccb-ad2d-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 14013
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "65e9de5fced9b692e6fc82be96d1db31"
+                },
+                "creationTimestamp": "2018-08-10T22:24:24Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "a5e7c6e8-af7f-49c0-94a0-0deb848c2421",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "4936",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/a5e7c6e8-af7f-49c0-94a0-0deb848c2421",
+                "uid": "229cfbe7-9cec-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:24:93",
+                "mtu": 1500,
+                "routerInterfaceID": "229dca9d-9cec-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9363
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "2ea758487ee3d8f8365a5d12a63f1014"
+                },
+                "creationTimestamp": "2018-08-10T22:51:33Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "a9689284-1ec3-4dd2-8f13-ddd2ddc088e8",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "5496",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/a9689284-1ec3-4dd2-8f13-ddd2ddc088e8",
+                "uid": "edffc00a-9cef-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:24:CE",
+                "mtu": 1500,
+                "routerInterfaceID": "ee011f67-9cef-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9422
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "c508fb792c33f9690e6ba19895c6ef74"
+                },
+                "creationTimestamp": "2018-08-10T22:51:38Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "ade6a220-9b9c-426a-91e0-a5974036ec8f",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "5511",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/ade6a220-9b9c-426a-91e0-a5974036ec8f",
+                "uid": "f0d10580-9cef-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:24:D1",
+                "mtu": 1500,
+                "routerInterfaceID": "f0d1f051-9cef-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9425
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "3bb2c4148ab9bf1cba93c47feecaa4d8",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk043-s08,genctl-nl-fz2-qz2-sr1-rk022-s07,genctl-nl-fz2-qz2-sr1-rk021-s03,genctl-nl-fz2-qz2-sr1-rk044-s06"
+                },
+                "creationTimestamp": "2018-08-15T22:44:04Z",
+                "labels": {
+                    "ResourceGroup": "bluerg",
+                    "ResourceName": "custprivnet",
+                    "UserCreated": "true"
+                },
+                "name": "adf9a3f0-00fb-4a92-85b1-a583eb763f7a",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "1242147",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/adf9a3f0-00fb-4a92-85b1-a583eb763f7a",
+                "uid": "b664ef87-a0dc-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "enableARP": true,
+                "leaseDuration": "300",
+                "subnet": "10.0.0.0/16"
+            },
+            "status": {
+                "gatewayIP": "10.0.0.1",
+                "gatewayMAC": "00:00:01:00:26:0B",
+                "mtu": 1500,
+                "routerInterfaceID": "b666d1a1-a0dc-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9739
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "648b7310985bf03fd6b03f60a54da391"
+                },
+                "creationTimestamp": "2018-08-10T22:51:35Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "aee8fbc2-c498-4ed7-a73c-1f6c74105196",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "5501",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/aee8fbc2-c498-4ed7-a73c-1f6c74105196",
+                "uid": "eef51ee4-9cef-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:24:CF",
+                "mtu": 1500,
+                "routerInterfaceID": "eef600e1-9cef-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9423
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "be65ac9c53c564dce4be079be7c080e6"
+                },
+                "creationTimestamp": "2018-08-10T16:24:13Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "b11c9198-0550-47df-9cda-03fc14e18876",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "637",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/b11c9198-0550-47df-9cda-03fc14e18876",
+                "uid": "d16c66e8-9cb9-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:23:C7",
+                "mtu": 1500,
+                "routerInterfaceID": "d16d421f-9cb9-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9159
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "49ea3dbf993badb0f3e78a46895f83e5"
+                },
+                "creationTimestamp": "2018-08-12T17:16:22Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "b6dd2311-17ee-48ef-9239-a19bc308fd0e",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "92205",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/b6dd2311-17ee-48ef-9239-a19bc308fd0e",
+                "uid": "6fad7dcb-9e53-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:25:70",
+                "mtu": 1500,
+                "routerInterfaceID": "6fae65d4-9e53-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9584
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "286186bf0705a3b2b01a5f14e5e48897",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s18"
+                },
+                "creationTimestamp": "2018-08-15T00:54:00Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "c209a512-0bf2-4efd-9beb-e9cfe84776a2",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "392239",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/c209a512-0bf2-4efd-9beb-e9cfe84776a2",
+                "uid": "b2baee6a-a025-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:32:EE",
+                "mtu": 1500,
+                "routerInterfaceID": "b2bbefff-a025-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 13038
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "cf7561969e0d0dfa6ebcc2d21c6e9a29"
+                },
+                "creationTimestamp": "2018-08-10T23:13:16Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "cdccb8aa-067c-4161-a8ad-0cd2c2e645f7",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "6085",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/cdccb8aa-067c-4161-a8ad-0cd2c2e645f7",
+                "uid": "f6462c1d-9cf2-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:25:0F",
+                "mtu": 1500,
+                "routerInterfaceID": "f64704fe-9cf2-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9487
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "d7a5e85dfc266d156fcc2f5f7ea69b0c",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk021-s05"
+                },
+                "creationTimestamp": "2018-08-26T16:53:41Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "cf9ffcc0-84a9-4686-ba09-b131228d79a3",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "1052181",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/cf9ffcc0-84a9-4686-ba09-b131228d79a3",
+                "uid": "965ad219-a950-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:24:96",
+                "mtu": 1500,
+                "routerInterfaceID": "965bb54f-a950-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9366
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "d4c0ba77740aaa485d656dafd8c8e5e6",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s18"
+                },
+                "creationTimestamp": "2018-08-14T05:53:30Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "d487d3f0-df4c-4fef-9fd4-c4ecb6fc8ae3",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "281646",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/d487d3f0-df4c-4fef-9fd4-c4ecb6fc8ae3",
+                "uid": "5f410ec1-9f86-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:2D:EE",
+                "mtu": 1500,
+                "routerInterfaceID": "5f420cfc-9f86-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 11758
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "cb97d2be9816abfd5d67f59b8bdfef31",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s18"
+                },
+                "creationTimestamp": "2018-08-26T12:54:44Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "da916ee8-ea98-47fa-9f18-409e63b7db0e",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "1045299",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/da916ee8-ea98-47fa-9f18-409e63b7db0e",
+                "uid": "3476ce17-a92f-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:2C:49",
+                "mtu": 1500,
+                "routerInterfaceID": "3478076b-a92f-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 11337
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "fd8f944cd8757e9146bd1fac46035b83",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s18"
+                },
+                "creationTimestamp": "2018-08-14T07:54:31Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "de18eb56-916f-4bf1-bbb2-70b4a04e26d2",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "295880",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/de18eb56-916f-4bf1-bbb2-70b4a04e26d2",
+                "uid": "46bd175e-9f97-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:2E:75",
+                "mtu": 1500,
+                "routerInterfaceID": "46be1f3a-9f97-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 11893
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "ab040c824abc6f399f848a18943c9b40"
+                },
+                "creationTimestamp": "2018-08-12T17:16:24Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "e3a7451a-c091-4b8a-a03a-6be143f2bc87",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "92210",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/e3a7451a-c091-4b8a-a03a-6be143f2bc87",
+                "uid": "7098fe46-9e53-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:25:71",
+                "mtu": 1500,
+                "routerInterfaceID": "7099ca12-9e53-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9585
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "efcd34f5515aaf64b01c91d8cfdbac31"
+                },
+                "creationTimestamp": "2018-08-10T23:13:13Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "e40b73e8-1cd3-4256-9fa3-8de84b9619d0",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "6075",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/e40b73e8-1cd3-4256-9fa3-8de84b9619d0",
+                "uid": "f4814760-9cf2-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:25:0D",
+                "mtu": 1500,
+                "routerInterfaceID": "f4823e20-9cf2-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9485
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "42ada61b74397e264bd348909cf23ae1"
+                },
+                "creationTimestamp": "2018-08-10T16:24:11Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "e5e227ef-26d2-4198-822a-e084e479bc99",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "632",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/e5e227ef-26d2-4198-822a-e084e479bc99",
+                "uid": "d07c6919-9cb9-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:23:C6",
+                "mtu": 1500,
+                "routerInterfaceID": "d07dc833-9cb9-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9158
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "7051ee2a8e30e678f21fe6d763e6678a"
+                },
+                "creationTimestamp": "2018-08-10T23:13:14Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "edec8be7-30b3-4f29-bd95-1a6a658ec929",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "6080",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/edec8be7-30b3-4f29-bd95-1a6a658ec929",
+                "uid": "f560df09-9cf2-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:25:0E",
+                "mtu": 1500,
+                "routerInterfaceID": "f561b936-9cf2-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9486
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "1ba0641303822d7e3d745aec3e1ea1e3"
+                },
+                "creationTimestamp": "2018-08-10T22:24:19Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "f7fb20af-e273-4c2d-a383-1217345828e6",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "4921",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/f7fb20af-e273-4c2d-a383-1217345828e6",
+                "uid": "1fda8c2d-9cec-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:24:90",
+                "mtu": 1500,
+                "routerInterfaceID": "1fdc01fb-9cec-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9360
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "",
+                    "RequestID": "76de95279dfa28f2bdfe5d96bd6307dc"
+                },
+                "creationTimestamp": "2018-08-12T17:16:25Z",
+                "labels": {
+                    "ResourceGroup": "test_rg",
+                    "ResourceName": "testnet",
+                    "UserCreated": "true"
+                },
+                "name": "fe61898c-fb70-45c4-90de-e822732b3d82",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "92215",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/fe61898c-fb70-45c4-90de-e822732b3d82",
+                "uid": "717f10a6-9e53-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 100,
+                "leaseDuration": "300",
+                "subnet": "10.10.10.0/24"
+            },
+            "status": {
+                "gatewayIP": "10.10.10.1",
+                "gatewayMAC": "00:00:01:00:25:72",
+                "mtu": 1500,
+                "routerInterfaceID": "717ff5f6-9e53-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9586
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "Description": "Network Description",
+                    "RequestID": "4f921ad247543fa43f2d8b8e911dd2f2"
+                },
+                "creationTimestamp": "2018-08-13T11:41:53Z",
+                "labels": {
+                    "ResourceGroup": "NETRG",
+                    "ResourceName": "NetAPINetwork_1534160513",
+                    "UserCreated": "true"
+                },
+                "name": "ff96644f-e4eb-4b8d-a90e-f604c70bfd3f",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "186230",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/ff96644f-e4eb-4b8d-a90e-f604c70bfd3f",
+                "uid": "dfc8b049-9eed-11e8-b3a3-1a6f3b00054f"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "leaseDuration": "300",
+                "subnet": "172.16.19.0/24"
+            },
+            "status": {
+                "gatewayIP": "172.16.19.1",
+                "gatewayMAC": "00:00:01:00:2A:48",
+                "mtu": 1500,
+                "routerInterfaceID": "dfca044c-9eed-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 10824
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s05,genctl-nl-fz2-qz2-sr1-rk044-s10"
+                },
+                "creationTimestamp": "2018-08-16T16:05:36Z",
+                "name": "storagedevice-storagevolume-dsnstoragevolume-184b60ef-e12c-47a8-a60f-4ea4778d22e1",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "541816",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/storagedevice-storagevolume-dsnstoragevolume-184b60ef-e12c-47a8-a60f-4ea4778d22e1",
+                "uid": "369400e0-a16e-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "disableDHCP": true,
+                "leaseDuration": "300"
+            },
+            "status": {
+                "mtu": 1500,
+                "state": "Ready",
+                "vnid": 10954
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s10,genctl-nl-fz2-qz2-sr1-rk044-s05"
+                },
+                "creationTimestamp": "2018-08-16T16:05:35Z",
+                "name": "storagedevice-storagevolume-dsnstoragevolume-b9c359b8-28d3-408a-aeac-573cf1a05f3e",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "541797",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/storagedevice-storagevolume-dsnstoragevolume-b9c359b8-28d3-408a-aeac-573cf1a05f3e",
+                "uid": "35e15e6c-a16e-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "disableDHCP": true,
+                "leaseDuration": "300"
+            },
+            "status": {
+                "mtu": 1500,
+                "state": "Ready",
+                "vnid": 10951
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk022-s07,genctl-nl-fz2-qz2-sr1-rk043-s10"
+                },
+                "creationTimestamp": "2018-08-17T21:28:21Z",
+                "name": "storagedevice-storagevolume-dsnstoragevolume-b9e5b634-26bd-4fae-b84c-cf603c530aae",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "640922",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/storagedevice-storagevolume-dsnstoragevolume-b9e5b634-26bd-4fae-b84c-cf603c530aae",
+                "uid": "76fb204f-a264-11e8-ad77-7af56dea3d57"
+            },
+            "spec": {
+                "disableDHCP": true,
+                "leaseDuration": "300"
+            },
+            "status": {
+                "mtu": 1500,
+                "state": "Ready",
+                "vnid": 12534
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "description": "SmokeTest",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s19,genctl-nl-fz2-qz2-sr1-rk021-s03,genctl-nl-fz2-qz2-sr1-rk044-s06,genctl-nl-fz2-qz2-sr1-rk044-s28",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{\"description\":\"SmokeTest\"},\"name\":\"test1GW\",\"namespace\":\"8bb61c395ce7a9bad4b0589f9a11b6b6\"},\"spec\":{\"bandwidthMb\":1000,\"enableL2Broadcast\":true,\"subnet\":\"169.47.85.96/27\"}}\n"
+                },
+                "creationTimestamp": "2018-08-11T19:08:10Z",
+                "labels": {
+                    "UserCreated": "true"
+                },
+                "name": "test1GW",
+                "namespace": "8bb61c395ce7a9bad4b0589f9a11b6b6",
+                "resourceVersion": "640891",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8bb61c395ce7a9bad4b0589f9a11b6b6/networks/test1GW",
+                "uid": "e363373c-9d99-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "subnet": "169.47.85.96/27"
+            },
+            "status": {
+                "gatewayIP": "169.47.85.97",
+                "gatewayMAC": "00:00:01:00:25:25",
+                "mtu": 1500,
+                "routerInterfaceID": "e3651e41-9d99-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9509
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "description": "perf1",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s28",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{\"description\":\"perf1\"},\"name\":\"perf1GW\",\"namespace\":\"8e38c608576e659ddda03904735fbf46\"},\"spec\":{\"bandwidthMb\":1000,\"enableL2Broadcast\":true,\"subnet\":\"169.47.85.32/27\"}}\n"
+                },
+                "creationTimestamp": "2018-08-12T13:48:51Z",
+                "labels": {
+                    "UserCreated": "true"
+                },
+                "name": "perf1GW",
+                "namespace": "8e38c608576e659ddda03904735fbf46",
+                "resourceVersion": "79242",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/8e38c608576e659ddda03904735fbf46/networks/perf1GW",
+                "uid": "72276bb1-9e36-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "subnet": "169.47.85.32/27"
+            },
+            "status": {
+                "gatewayIP": "169.47.85.33",
+                "gatewayMAC": "00:00:01:00:25:28",
+                "mtu": 1500,
+                "routerInterfaceID": "72293584-9e36-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9512
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "description": "test2",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s28",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{\"description\":\"test2\"},\"name\":\"test2GW\",\"namespace\":\"d55aac27f2bda6953a476db3e4e65125\"},\"spec\":{\"bandwidthMb\":1000,\"enableL2Broadcast\":true,\"subnet\":\"169.47.85.192/29\"}}\n"
+                },
+                "creationTimestamp": "2018-08-12T14:08:16Z",
+                "labels": {
+                    "UserCreated": "true"
+                },
+                "name": "test2GW",
+                "namespace": "d55aac27f2bda6953a476db3e4e65125",
+                "resourceVersion": "80437",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/d55aac27f2bda6953a476db3e4e65125/networks/test2GW",
+                "uid": "285179d0-9e39-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "subnet": "169.47.85.192/29"
+            },
+            "status": {
+                "gatewayIP": "169.47.85.193",
+                "gatewayMAC": "00:00:01:00:25:2F",
+                "mtu": 1500,
+                "routerInterfaceID": "285342fd-9e39-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9519
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "description": "TrungT Public Gateway",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s28",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{\"description\":\"TrungT Public Gateway\"},\"name\":\"ttPsoGW\",\"namespace\":\"e68f134d0d78d1929f215cfdf18ac5f9\"},\"spec\":{\"bandwidthMb\":1000,\"enableL2Broadcast\":true,\"subnet\":\"169.47.85.208/29\"}}\n"
+                },
+                "creationTimestamp": "2018-08-14T16:55:59Z",
+                "labels": {
+                    "UserCreated": "true"
+                },
+                "name": "ttPsoGW",
+                "namespace": "e68f134d0d78d1929f215cfdf18ac5f9",
+                "resourceVersion": "360016",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/e68f134d0d78d1929f215cfdf18ac5f9/networks/ttPsoGW",
+                "uid": "eb1a8f82-9fe2-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "subnet": "169.47.85.208/29"
+            },
+            "status": {
+                "gatewayIP": "169.47.85.209",
+                "gatewayMAC": "00:00:01:00:30:D6",
+                "mtu": 1500,
+                "routerInterfaceID": "eb1be6bc-9fe2-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 12502
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "description": "perf2",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s28",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{\"description\":\"perf2\"},\"name\":\"perf2GW\",\"namespace\":\"f616282fe630034e0b971a24a82c8b53\"},\"spec\":{\"bandwidthMb\":1000,\"enableL2Broadcast\":true,\"subnet\":\"169.47.85.64/27\"}}\n"
+                },
+                "creationTimestamp": "2018-08-12T13:51:31Z",
+                "labels": {
+                    "UserCreated": "true"
+                },
+                "name": "perf2GW",
+                "namespace": "f616282fe630034e0b971a24a82c8b53",
+                "resourceVersion": "79255",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/f616282fe630034e0b971a24a82c8b53/networks/perf2GW",
+                "uid": "d19bb9d4-9e36-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "bandwidthMb": 1000,
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "subnet": "169.47.85.64/27"
+            },
+            "status": {
+                "gatewayIP": "169.47.85.65",
+                "gatewayMAC": "00:00:01:00:25:29",
+                "mtu": 1500,
+                "routerInterfaceID": "d19d9d72-9e36-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9513
+            }
+        },
+        {
+            "apiVersion": "networking.genesis.ibm.com/v1alpha1",
+            "kind": "Network",
+            "metadata": {
+                "annotations": {
+                    "description": "public gateway network",
+                    "endpoints-on-nodes": "genctl-nl-fz2-qz2-sr1-rk044-s28",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.genesis.ibm.com/v1alpha1\",\"kind\":\"Network\",\"metadata\":{\"annotations\":{\"description\":\"public gateway network\"},\"name\":\"PublicNetworkGW\",\"namespace\":\"genctl\"},\"spec\":{\"bandwidth\":1000,\"enableL2Broadcast\":true,\"subnet\":\"169.47.85.0/30\"}}\n"
+                },
+                "creationTimestamp": "2018-08-10T19:42:53Z",
+                "name": "PublicNetworkGW",
+                "namespace": "genctl",
+                "resourceVersion": "2586",
+                "selfLink": "/apis/networking.genesis.ibm.com/v1alpha1/namespaces/genctl/networks/PublicNetworkGW",
+                "uid": "926fcefb-9cd5-11e8-94ce-3e338a9fcdfb"
+            },
+            "spec": {
+                "enableL2Broadcast": true,
+                "leaseDuration": "300",
+                "subnet": "169.47.85.0/30"
+            },
+            "status": {
+                "gatewayIP": "169.47.85.1",
+                "gatewayMAC": "00:00:01:00:24:12",
+                "mtu": 1500,
+                "routerInterfaceID": "92714e10-9cd5-11e8-8bdc-eedb927002fa",
+                "state": "Ready",
+                "vnid": 9234
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": "",
+        "selfLink": ""
+    }
+}

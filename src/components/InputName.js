@@ -5,7 +5,7 @@ export default class InputName extends Component {
     super(props)
 
     this.state = {
-      name: '',
+      opsquerystr: '',
     }
   }
 
@@ -14,14 +14,14 @@ export default class InputName extends Component {
       <div>
         <input
           type="text"
-          value={this.state.name}
+          value={this.state.opsquerystr}
           onChange={e => {
-            this.setState({ name: e.target.value })
+            this.setState({ opsquerystr: e.target.value })
           }}
         />
         <button
           onClick={() => {
-            this.props.onSubmit(this.state.name)
+            this.props.onSubmit(this.state.opsquerystr)
           }}
         >
           Send
