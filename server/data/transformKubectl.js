@@ -5,8 +5,8 @@ const datacenter = 'dal12'
 const pod = 'dal12.g4'
 const environment = 'PROD'
 
-const vmType = 'CCI'
 const hwType = 'BAREMETAL'
+const vmType = 'VSI'
 
 const kbStrToGb = kiStr => parseInt(parseFloat(kiStr.slice(0, -2)) / (1024 * 1024))
 const mbToGb = mi => parseInt(parseFloat(mi)) / 1024
